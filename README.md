@@ -1,68 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Korle-Bu is a non-profit organization shipping medical supplies and equipment to developing nations. https://kbnf.org/
 
-## Available Scripts
+## Getting started
+  Backend: Ruby on Rails. We suggest using RVM or rbenv to install version `2.5.1p57`. You can check your current version of ruby with `ruby -v`. More information on ruby: https://www.ruby-lang.org/en/documentation/installation/
+  
+  Database: PostgreSQL, use  `brew` or visit https://www.postgresql.org/ and install version `10.5`
+  
+  Frontend: React.js using `node@12.15.0`
 
-In the project directory, you can run:
+### Setup Rails
+* clone the repository: `git@github.com:jessefalconer/korle-bu-rails-api.git` and `cd` into the directory
+* Install dependencies with `bundle install`
+* Create the database with `rails db:create`
+* Run any pending migrations with `rails db:migrate`
+* Seed the database with `rails db:seed`
+* Start the server with `rails s`
 
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Setup React.js
+* clone the repository: `git@github.com:jessefalconer/korle-bu-react.git` and `cd` into the directory
+* Run the server with `npm start` or whichever node package manager you are using
+* Depending on your port defaults, you may need to change the port to listen on `localhost:3001` as rails defaults to port 3000. The Cross Origin Resource Sharing (CORS) inside rails whitelists port 3001.
+* Access the server on http://localhost:3001
