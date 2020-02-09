@@ -23,3 +23,4 @@ Korle-Bu is a non-profit organization shipping medical supplies and equipment to
 
 ### Rails Convenience
 * View http paths by running `rails routes` or visiting http://localhost:3000/rails/info/routes
+* To lint your code and see possible style "offences" or errors, run `rubocop`. To automatically correct them run `rubocop -a`
